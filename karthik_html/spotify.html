@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+        body{
+            background-color: rgb(81, 77, 77);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        nav{
+            width: 100vw;
+            height: 17vh;
+            background-color: black;
+            position: sticky;
+            top: 0px;   
+
+        }
+        #l-logo{
+            width: 40px;
+
+        }
+        span{
+            color: white;
+            font-weight: bolder;
+            font-size:25px;
+        }
+        #l-logo-div{
+            width: 10vw;
+            height: 10vh;
+            /* background-color: aqua; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            top:20px;
+            left: 60px;
+        }
+        #l-body{
+            width: 60vw;
+            height: 73vh;
+            background-color:black;
+            position: absolute;
+            bottom: 40px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        #l-banner{
+            color: white;
+            font-weight: bolder;
+            font-size:50px;
+        }
+        #email{
+           width: 23vw; 
+           background-color:rgb(35, 32, 32);
+           height: 8vh;
+           border: 1px solid whitesmoke;
+           border-radius: 4px;
+           outline: none;
+           display: flex;
+           color: white;
+           font-size: 17px;
+           justify-content: center;
+           padding-left: 15px;
+        }
+        #l-emdiv{
+            width: 28vw;
+            height: 25vh;
+           /*  background-color: aqua;*/
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+
+        }
+        #login{
+            width: 12vw;
+            height: 8vh;
+            color: black;
+            font-size: 17px;
+            font-weight: bold;
+            background-color: rgb(92, 215, 70);
+            border-radius: 100px;
+            border: none;
+        }
+        #e-m,#e-p{
+            position: relative;
+            top: 0px;
+            left:-115px;
+            font-size: 15px;
+        }
+        #e-m{
+            left:-130px;
+        }
+    </style>
+</head>
+<body>
+   <nav>
+        <div id="l-logo-div"><img id="l-logo" src=" https://open.spotify.com/" alt=""><span>Spotify</span></div>
+   </nav> 
+   <div id="l-body">
+        <span id="l-banner">Login to Spotify</span>
+     <div id="l-emdiv">
+        <span id="e-m">Email</span>
+        <input id="email" type="text" placeholder="Email or Username">
+        <span id="e-p">Password</span>
+        <input id="email" class="pass" type="password" placeholder="password">
+    </div>
+      <form><a href="#"><input id="login" type="submit" value="Log in" onclick="access()"></a></form>
+        
+   </div>
+   
+</body>
+</html>

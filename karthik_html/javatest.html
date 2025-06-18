@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: inline-block;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Java Test</h1>
+        </div>
+        <div>
+            <div class="section-title">Personal Information</div>
+            <div class="form-group">
+                <label for="name">Enter Your Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="htno">Enter Your Ht.No:</label>
+                <input type="text" id="htno" name="htno">
+            </div>
+            <div class="form-group">
+                <label for="email">Enter Your Email ID:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="mobile">Enter Your Mobile No:</label>
+                <input type="text" id="mobile" name="mobile">
+            </div>
+            <div class="form-group">
+                <label for="dob">Enter Your DOB:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+        </div>
+        <div>
+            <div class="section-title">Questions</div>
+            <div>
+                <p>1. Which of the following option leads to the portability and security of Java?</p>
+                <input type="radio" id="option1" name="q1" value="A">
+                <label for="option1">A. Bytecode is executed by JVM</label><br>
+                <input type="radio" id="option2" name="q1" value="B">
+                <label for="option2">B. The applet makes the Java code secure and portable</label><br>
+                <input type="radio" id="option3" name="q1" value="C">
+                <label for="option3">C. Use of exception handling</label><br>
+                <input type="radio" id="option4" name="q1" value="D">
+                <label for="option4">D. Dynamic binding between objects</label>
+                <p>2.What is a correct syntax to output"Hello World" in java?</p>
+                <input type="radio" id="option1" name="q2" value="A">
+                <label for="option1">A. print("Hello Worid");</label><br>
+                <input type="radio" id="option2" name="q2" value="B">
+                <label for="option2">B.Console.writeLine("Hello World");</label><br>
+                <input type="radio" id="option3" name="q2" value="C">
+                <label for="option3">C. System.out.println("Hello World");</label><br>
+                <input type="radio" id="option4" name="q2" value="D">
+                <label for="option4">D. echo("Hello World");</label>
+                <p>3.What is the correct Syntax for java main method?</p>
+                <input type="radio" id="option1" name="q3" value="A">
+                <label for="option1">A. Public void main(String[] args)</label><br>
+                <input type="radio" id="option2" name="q3" value="B">
+                <label for="option2">B. Public static void main(String[]args)</label><br>
+                <input type="radio" id="option3" name="q3" value="C">
+                <label for="option3">C. Public static void main()</label><br>
+                <input type="radio" id="option4" name="q3" value="D">
+                <label for="option4">D. none of the above</label>
+                <p>4.Java runs on ______</p>
+                <input type="radio" id="option1" name="q4" value="A">
+                <label for="option1">A. Windows</label><br>
+                <input type="radio" id="option2" name="q4" value="B">
+                <label for="option2">B. Unix/Linux</label><br>
+                <input type="radio" id="option3" name="q4" value="C">
+                <label for="option3">C. Mac</label><br>
+                <input type="radio" id="option4" name="q4" value="D">
+                <label for="option4">D. All of the above</label>
+                <p>5. What is the size of int data type in Java?</p>
+                <input type="radio" id="option1" name="q5" value="A">
+                <label for="option1">A. 2 bytes</label><br>
+                <input type="radio" id="option2" name="q5" value="B">
+                <label for="option2">B. 4 bytes</label><br>
+                <input type="radio" id="option3" name="q5" value="C">
+                <label for="option3">C. 8 bytes</label><br>
+                <input type="radio" id="option4" name="q5" value="D">
+                <label for="option4">D. 16 bytes</label>
+                <p>6.What is the default value of the local variables?</p>
+                <input type="radio" id="option1" name="q6" value="A">
+                <label for="option1">A. null</label><br>
+                <input type="radio" id="option2" name="q6" value="B">
+                <label for="option2">B. 0</label><br>
+                <input type="radio" id="option3" name="q6" value="C">
+                <label for="option3">C. undefined</label><br>
+                <input type="radio" id="option4" name="q6" value="D">
+                <label for="option4">D. No default value</label>
+                <p>7.What is the extension of compiled Java classes?</p>
+                <input type="radio" id="option1" name="q7" value="A">
+                <label for="option1">A. .java</label><br>
+                <input type="radio" id="option2" name="q7" value="B">
+                <label for="option2">B. .class</label><br>
+                <input type="radio" id="option3" name="q7" value="C">
+                <label for="option3">C. .jss</label><br>
+                <input type="radio" id="option4" name="q7" value="D">
+                <label for="option4">D. .bytecode</label>
+                <p>8.Who invented Java programming?</p>
+                <input type="radio" id="option1" name="q8" value="A">
+                <label for="option1">A. Guido Van Rossum</label><br>
+                <input type="radio" id="option2" name="q8" value="B">
+                <label for="option2">B. James Gosling</label><br>
+                <input type="radio" id="option3" name="q8" value="C">
+                <label for="option3">C. Dennis Ritchie</label><br>
+                <input type="radio" id="option4" name="q8" value="D">
+                <label for="option4">D. Bjarne Stroustrup</label>
+                <p>9.Which component is used to compile, debug and execute java programs?</p>
+                <input type="radio" id="option1" name="q9" value="A">
+                <label for="option1">A. JRE</label><br>
+                <input type="radio" id="option2" name="q9" value="B">
+                <label for="option2">B. JIT</label><br>
+                <input type="radio" id="option3" name="q9" value="C">
+                <label for="option3">C. JDK</label><br>
+                <input type="radio" id="option4" name="q9" value="D">
+                <label for="option4">D. JVM</label>
+                <P>10. What is the output of the following code?<p>
+                <pre>      
+                    class eg
+                        {
+                            public static void main(String[]args)
+                            {
+                                String s1="Hello"
+                                String s2= new String(s1);
+                                System.out.println(s1==s2);
+                            }
+                        }
+                <pre>
+                    <div class="options">
+                <input type="radio" id="option1" name="q10" value="A">
+                <label for="option1">A. True</label><br>
+                <input type="radio" id="option2" name="q10" value="B">
+                <label for="option2">B. False</label><br>
+                <input type="radio" id="option3" name="q10" value="C">
+                <label for="option3">C. Hello</label><br>
+                <input type="radio" id="option4" name="q10" value="D">
+                <label for="option4">D. 1</label>
+             </div>
+            </div>
+            <center>
+            <button type="submit">Submit</button>  
+            
+       <button onclick="location.reload()">Refresh page</button>
+       </center>      
+        </div>
+    </div>
+</body>
+</html>

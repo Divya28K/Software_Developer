@@ -1,0 +1,152 @@
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+     <style>
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+     </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <script>
+    //     var heading1 = document.createElement("h1");
+    //    var head= document.querySelector("body");
+    //    head.appendChild(heading1);
+    //    heading1.innerHTML="this is the h1 tag indside the body"
+
+    
+        // var child=document.createElement("img");
+        // var parent=document.querySelector("div");
+        // parent.appendChild(child);
+        // child.src="./c.gif"
+
+
+        // var formChild=document.createElement("form");
+        // var parent=document.querySelector("body")
+        // parent.appendChild(formChild)
+        // var inpChild1=document.createElement("input");
+        // var inpChild2=document.createElement("input");
+        // var inpChild3=document.createElement("input");
+        // var parent1=document.querySelector("form")
+        // parent1.appendChild(inpChild1)
+        // parent1.appendChild(inpChild2)
+        // parent1.appendChild(inpChild3)
+        // inpChild1.required=true
+        // inpChild1.placeholder="enter tha mail"
+        // inpChild2.placeholder="enter tha password"
+        // inpChild3.type="submit"
+        // inpChild1.type="email"
+        // inpChild2.type="password"
+
+        
+        var tableTag=document.createElement("table");
+        var bodyParent=document.querySelector("body");
+        bodyParent.appendChild(tableTag)
+
+
+        var trChild=document.createElement("tr")
+        tableTag.appendChild(trChild)
+        var thTag1=document.createElement("th");
+        var thTag2=document.createElement("th");
+        var thTag3=document.createElement("th");
+        trChild.appendChild(thTag1)
+        trChild.appendChild(thTag2)
+        trChild.appendChild(thTag3)
+        thTag1.innerHTML="EMP ID"
+        thTag2.innerHTML="EMP NAME"
+        thTag3.innerHTML="EMP DESE."
+
+        var trChild1=document.createElement("tr")
+        tableTag.appendChild(trChild1)
+        var tdTag1=document.createElement("td");
+        var tdTag2=document.createElement("td");
+        var tdTag3=document.createElement("td");
+        trChild1.appendChild(tdTag1)
+        trChild1.appendChild(tdTag2)
+        trChild1.appendChild(tdTag3)
+        tdTag1.innerHTML="1"
+        tdTag2.innerHTML="Ramu"
+        tdTag3.innerHTML="Ass.S/E"
+
+        var trChild2=document.createElement("tr")
+        tableTag.appendChild(trChild2)
+        var tdTag1=document.createElement("td");
+        var tdTag2=document.createElement("td");
+        var tdTag3=document.createElement("td");
+        trChild2.appendChild(tdTag1)
+        trChild2.appendChild(tdTag2)
+        trChild2.appendChild(tdTag3)
+        tdTag1.innerHTML="2"
+        tdTag2.innerHTML="Rama"
+        tdTag3.innerHTML="Ass. S/E"
+
+
+
+
+        
+
+
+    </script>  
+</body>
+</html-->
+
+
+
+
+<!--add event listener-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <button id="a">red</button>
+   <button id="b">green</button>
+   <button id="c">blue</button>
+   <button id="d">yellow</button>
+   <button id="e">pink</button>
+
+   <script>
+    // var buttonColour=document.querySelector("button")
+    // buttonColour.addEventListener("click",fun)
+    // function fun(){
+    //     document.querySelector("body").style.backgroundColor="red"
+    // }
+
+    var but = document.querySelector("#a")
+    but.addEventListener("click",function(){
+        document.querySelector("body").style.backgroundColor="red"
+    })
+
+    var but = document.querySelector("#b")
+    but.addEventListener("click",function(){
+        document.querySelector("body").style.backgroundColor="green"
+    })
+
+    var but = document.querySelector("#c")
+    but.addEventListener("click",function(){
+        document.querySelector("body").style.backgroundColor="blue"
+    })
+
+    var but = document.querySelector("#d")
+    but.addEventListener("click",function(){
+        document.querySelector("body").style.backgroundColor="yellow"
+    })
+
+    var but = document.querySelector("#e")
+    but.addEventListener("click",function(){
+        document.querySelector("body").style.backgroundColor="pink"
+    })
+    
+
+    
+   </script> 
+</body>
+</html>

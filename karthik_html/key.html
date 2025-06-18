@@ -1,0 +1,98 @@
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        transition:all 0.2s;
+    }
+    img{
+        width: 300px;
+    }
+    marquee{
+        position: absolute;
+        bottom: 0px;
+    }
+   </style>
+</head>
+<body onkeydown="jump()" onkeyup="normal()">
+    <marquee direction="right" scrollamount="10" id="a">
+    <img src=" https://mir-s3-cdn-cf.behance.net/project_modules/disp/63021c32544989.568a0ce900a76.gif" >
+    </marquee>  
+    <script>
+        function jump(){
+            document.getElementById("a").style.bottom="250px"
+        }
+        function normal(){
+            document.getElementById("a").style.bottom="0px"
+        }
+    </script>
+</body>
+</html-->
+
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <input onfocus="focusIn()" onblur="notFocus()">
+    <script>
+        function focusIn(){
+            document.querySelector("input").style.backgroundColor="red"
+            document.querySelector("body").style.backgroundColor="white"
+
+        }
+        function notFocus(){
+            document.querySelector("body").style.backgroundColor="seaGreen"
+            document.querySelector("input").style.backgroundColor="white"
+
+        }
+    </script>
+</body>
+</html-->
+
+
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body onload="fun()">
+   <h1></h1>
+   <script>
+    function fun(){
+        document.querySelector("h1").innerHTML="this is the h1 tag"
+    }
+   </script> 
+</body>
+</html-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Document</title>
+</head>
+<body>
+    <input type="button" value=" click here">
+    <script>
+        var inp=document.querySelector("input");
+        inp.setAttribute("type","text")
+         inp.setAttribute("placeholder","enter the user name")
+        inp.removeAttribute("value")
+        inp.removeAttribute("type")
+    </script>
+</body>
+</html>

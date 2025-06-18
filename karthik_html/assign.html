@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+           overflow: hidden;
+        }
+        #imgcont{
+            width: 60%;
+            height: 100vh;
+            background-color: gold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 400px;
+        }
+        #cont{
+            width: 40%;
+            height: 100vh;
+            background-color: antiquewhite;
+            position: absolute;
+            right: 0px; 
+        }
+        h1{
+            position: relative;
+            top: 30px;
+            left: 200px;
+        }
+        input{
+            position: relative;
+            left: 100px;
+            top: 30px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont">
+      <h1>Grayscale</h1>
+      <input value="0" type="range" id="gray" oninput="funG()">
+      <h1>Brightness</h1>
+      <input value="0" type="range" id="bri" oninput="funB()" min="100" max="200">
+      <h1>Contrast</h1>
+      <input value="0" type="range" id="con" oninput="funC()" min="100" max="200">
+      <h1>Opacity</h1>
+      <input value="0" type="range" id="op" oninput="funO()">
+      <h1>Blur</h1>
+      <input value="0" type="range" id="blur" oninput="funBl()">
+      <h1>Hue</h1>
+      <input value="0" type="range" id="hue" oninput="funH()">
+      <h1>Sturation</h1>
+      <input value="0" type="range" id="sat" oninput="funS()" min="100" max="500">
+      <h1>Invert</h1>
+      <input value="0" type="range" id="inv" oninput="funI()">
+      <h1>Sepia</h1>
+      <input value="0" type="range" id="sep" oninput="funSe()">
+    </div>
+   <div id="imgcont"> 
+     <img src=" https://th.bing.com/th/id/OIP.4z2feTp_Mw25d-lmn1wMdQAAAA?rs=1&pid=ImgDetMain" id="im"> 
+   </div>
+   <script>
+    function funG()
+    {
+        var ra=document.getElementById("gray").value
+        document.getElementById("im").style.filter=`grayScale(${ra}%)`
+    }
+
+    function funB()
+    {
+        var ra=document.getElementById("bri").value
+        document.getElementById("im").style.filter=`brightness(${ra}%)`
+    }
+
+    function funC()
+    {
+        var ra=document.getElementById("con").value
+        document.getElementById("im").style.filter=`contrast(${ra}%)`
+    }
+
+    function funO()
+    {
+        var ra=document.getElementById("op").value
+        document.getElementById("im").style.filter=`opacity(${ra}%)`
+    }
+
+    function funBl()
+    {
+        var ra=document.getElementById("blur").value
+        document.getElementById("im").style.filter=`blur(${ra}px)`
+    }
+
+    function funH()
+    {b
+        var ra=document.getElementById("hue").value
+        document.getElementById("im").style.filter=`hue-Rotate(${ra}deg)`
+    }
+
+    function funS()
+    {
+        var ra=document.getElementById("sat").value
+        document.getElementById("im").style.filter=`saturate(${ra}%)`
+    }
+
+    function funI()
+    {
+        var ra=document.getElementById("inv").value
+        document.getElementById("im").style.filter=`invert(${ra}%)`
+    }
+
+    function funSe()
+    {
+        var ra=document.getElementById("sep").value
+        document.getElementById("im").style.filter=`sepia(${ra}%)`
+    }
+   </script> 
+</body>
+</html>
